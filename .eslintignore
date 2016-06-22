@@ -1,0 +1,4 @@
+dist/**/*.js
+coverage/**/*.js
+gh-pages/**/*.js
+gh-pages-static/**/*.js

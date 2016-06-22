@@ -1,0 +1,77 @@
+{
+  "name": "live-photos",
+  "version": "1.0.0",
+  "description": "Apple Live Photo support on the web, courtesy of Tumblr",
+  "main": "./dist/live-photos.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && webpack && webpack --production",
+    "lint": "eslint '**/*.js'",
+    "karma": "karma start karma.conf.js",
+    "test": "npm run lint && npm run karma",
+    "generate-docs": "rm -rf gh-pages && node_modules/.bin/jsdoc -c jsdoc.json",
+    "gh-pages": "git subtree push --prefix=gh-pages origin gh-pages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/tumblr/live-photos"
+  },
+  "keywords": [
+    "live photos",
+    "live photo",
+    "live",
+    "photo",
+    "apple",
+    "image",
+    "video"
+  ],
+  "files": [
+    "lib/live-photos.js",
+    "lib/live-photo.js",
+    "lib/live-photo.svg",
+    "lib/styles.scss",
+    "dist/live-photos.js",
+    "LICENSE"
+  ],
+  "author": "Tumblr",
+  "contributors": [
+    "Keith McKnight (kmck)"
+  ],
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "chai": "^3.5.0",
+    "css-loader": "^0.23.1",
+    "eslint": "^3.0.1",
+    "hotdoc": "^0.7.0",
+    "iphone-inline-video": "^1.7.4",
+    "istanbul": "^0.4.3",
+    "istanbul-instrumenter-loader": "^0.2.0",
+    "jsdoc": "^3.4.0",
+    "karma": "^1.1.1",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-coverage": "^1.1.0",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-fixture": "^0.2.6",
+    "karma-html2js-preprocessor": "^1.0.0",
+    "karma-json-fixtures-preprocessor": "0.0.6",
+    "karma-mocha": "^1.0.1",
+    "karma-mocha-reporter": "^2.0.2",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-safari-launcher": "^1.0.0",
+    "karma-webpack": "^1.7.0",
+    "lodash": "^4.11.1",
+    "mocha": "^2.4.5",
+    "node-sass": "^3.5.3",
+    "phantomjs-prebuilt": "^2.1.7",
+    "postcss-inline-svg": "^2.0.1",
+    "postcss-loader": "^0.9.1",
+    "postcss-svgo": "^2.1.4",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "tiny-emitter": "^1.0.2",
+    "webpack": "^1.13.0"
+  },
+  "dependencies": {}
+}

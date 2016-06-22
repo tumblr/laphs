@@ -1,0 +1,129 @@
+$livephoto-zoom-max: 1.075;
+$livephoto-blur: 7.5px;
+$livephoto-activate-duration: 1s;
+$livephoto-postroll-duration: 0.375 * $livephoto-activate-duration;
+$livephoto-crossfade-duration: $livephoto-activate-duration - $livephoto-postroll-duration;
+$livephoto-deactivate-duration: 0.5s;
+$livephoto-loading-duration: 0.5 * $livephoto-activate-duration;
+$livephoto-icon-color: #ffffff;
+$livephoto-icon-size: 24px;
+$livephoto-icon-offset: 12px;
+$livephoto-icon-drop-shadow: rgba(#000000, 0.5);
+
+.live-photo {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    video,
+    img {
+        display: block;
+        max-width: 100%;
+    }
+
+    video {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        touch-action: none;
+
+        &::-webkit-media-controls-start-playback-button {
+            display:none;
+        }
+    }
+
+    .live-photo-icon {
+        display: block;
+        position: absolute;
+        top: $livephoto-icon-offset;
+        left: $livephoto-icon-offset;
+        width: $livephoto-icon-size;
+        height: $livephoto-icon-size;
+        background: svg-load('./live-photo.svg', fill=$livephoto-icon-color) center center;
+        background-size: contain;
+        filter: drop-shadow(0 1px 1px $livephoto-icon-drop-shadow);
+        pointer-events: none;
+    }
+
+    .live-photo-postroll,
+    .live-photo-video {
+        opacity: 0;
+    }
+
+    .live-photo-video {
+        filter: blur($livephoto-blur);
+    }
+
+    .live-photo-keyframe,
+    .live-photo-postroll,
+    .live-photo-video {
+        will-change: transform, filter, opacity;
+        transition: transform $livephoto-deactivate-duration ease-out, filter $livephoto-deactivate-duration linear, opacity $livephoto-deactivate-duration linear;
+    }
+
+    &.loading {
+        .live-photo-icon {
+            animation: live-photo-icon-loading $livephoto-loading-duration linear alternate infinite both;
+        }
+    }
+
+    &.preview {
+        .live-photo-postroll {
+            opacity: 1;
+            transition-duration: 0s;
+        }
+    }
+
+    &.active {
+        video,
+        img {
+            transform: scale($livephoto-zoom-max, $livephoto-zoom-max);
+        }
+
+        .live-photo-postroll {
+            animation: live-photo-post-roll $livephoto-activate-duration both;
+        }
+
+        .live-photo-video {
+            opacity: 1;
+            filter: none;
+            transition-delay: $livephoto-postroll-duration;
+            transition-duration: $livephoto-crossfade-duration;
+        }
+    }
+}
+
+@keyframes live-photo-icon-loading {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.75;
+    }
+}
+
+@keyframes live-photo-post-roll {
+    0% {
+        opacity: 0;
+        filter: blur(0);
+    }
+
+    2% {
+        opacity: 1;
+    }
+
+    37.5% {
+        opacity: 1;
+        filter: blur($livephoto-blur);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
