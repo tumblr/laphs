@@ -1,7 +1,7 @@
-Live Photos on the Web
-======================
+LaPhs: Apple Live Photos on the Web
+===================================
 
-Add support for Live Photos on the Web! Brought to you by <a href="https://www.tumblr.com/tv/dogs" target="_blank">Tumblr</a>.
+Add support for Apple's Live Photos on the Web! Brought to you by <a href="https://www.tumblr.com/tv/dogs" target="_blank">Tumblr</a>.
 
 ## Demo
 
@@ -15,7 +15,7 @@ Click and hold down the following image to see it move.
 
 ## Easy Setup
 
-First, add the [JavaScript library](https://github.com/tumblr/live-photos/blob/master/dist/live-photos.min.js) to your page. If you prefer, you can install it from [npm](https://www.npmjs.com/package/live-photos) instead.
+First, add the [JavaScript library](https://github.com/tumblr/live-photos/blob/master/dist/live-photos.min.js) to your page. If you prefer, you can install it from [npm](https://www.npmjs.com/package/laphs) instead.
 
 Next, add the special data attributes to your image markup:
 
