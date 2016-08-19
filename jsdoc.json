@@ -15,8 +15,7 @@
         "recurse": true,
         "verbose": true,
         "readme": "docs/index.md",
-        "template": "/Users/kmck/Code/hotdoc/template"
-        // "template": "node_modules/hotdoc/template"
+        "template": "node_modules/hotdoc/template"
     },
     "hotdoc": {
         "static": true,
