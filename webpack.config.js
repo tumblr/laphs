@@ -12,7 +12,7 @@ var config = {
     output:  {
         path: __dirname + '/dist',
         filename: 'laphs.js',
-        library: 'Laphs',
+        library: 'LivePhotos',
         libraryTarget: 'umd',
     },
     module: {

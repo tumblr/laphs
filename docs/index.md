@@ -10,7 +10,7 @@ Click and hold down the following image to see it move.
 <figure class="demo">
     <img src="https://40.media.tumblr.com/3613923b93c21e78bc9e8935220c186a/tumblr_o63c4ekE1X1twn7m0o1_1280.jpg" data-live-photo="https://53.media.tumblr.com/3613923b93c21e78bc9e8935220c186a/tumblr_o63c4ekE1X1twn7m0o1.mov" data-live-photo-still-image-time="1.71"/>
 </figure>
-<script src="./live-photos.js"></script>
+<script src="./laphs.js"></script>
 <script src="./script.js"></script>
 
 ## Easy Setup
