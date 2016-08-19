@@ -2,7 +2,7 @@
   "name": "live-photos",
   "version": "1.0.0",
   "description": "Apple Live Photo support on the web, courtesy of Tumblr",
-  "main": "./dist/live-photos.js",
+  "main": "./dist/laphs.js",
   "scripts": {
     "clean": "rm -rf dist",
     "build": "npm run clean && webpack && webpack --production",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://www.github.com/tumblr/live-photos"
+    "url": "https://www.github.com/tumblr/laphs"
   },
   "keywords": [
     "live photos",
@@ -23,14 +23,15 @@
     "photo",
     "apple",
     "image",
-    "video"
+    "video",
+    "laphs"
   ],
   "files": [
     "lib/live-photos.js",
     "lib/live-photo.js",
     "lib/live-photo.svg",
     "lib/styles.scss",
-    "dist/live-photos.js",
+    "dist/laphs.js",
     "LICENSE"
   ],
   "author": "Tumblr",

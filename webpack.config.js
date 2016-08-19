@@ -11,8 +11,8 @@ var config = {
     entry: './lib/live-photos.js',
     output:  {
         path: __dirname + '/dist',
-        filename: 'live-photos.js',
-        library: 'LivePhotos',
+        filename: 'laphs.js',
+        library: 'Laphs',
         libraryTarget: 'umd',
     },
     module: {
@@ -33,7 +33,7 @@ var config = {
 };
 
 if (production) {
-    config.output.filename = 'live-photos.min.js';
+    config.output.filename = 'laphs.min.js';
     config.plugins = [
         new webpack.optimize.UglifyJsPlugin({
             compress: {
