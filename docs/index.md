@@ -1,7 +1,7 @@
 LaPhs: Apple Live Photos on the Web
 ===================================
 
-Add support for Apple's Live Photos on the Web! Brought to you by <a href="https://www.tumblr.com/tv/dogs" target="_blank">Tumblr</a>.
+Add support for Apple's Live Photos on the Web! Brought to you by <a href="https://www.tumblr.com/tv/cats" target="_blank">Tumblr</a>.
 
 ## Demo
 
