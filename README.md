@@ -1,7 +1,7 @@
-Live Photos on the Web
+LaPhs: Live Photos on the Web
 ======================
 
-Add support for Live Photos in web browsers.
+Add support for Apple's Live Photos in web browsers.
 
 ## Installation
 
@@ -9,12 +9,12 @@ Add support for Live Photos in web browsers.
 
 Install the library:
 
-    npm install --save live-photos
+    npm install --save laphs
 
 Include it into your module:
 
 ```js
-var LivePhotos = require('live-photos');
+var LivePhotos = require('laphs');
 ```
 
 ### The old-fashioned way
@@ -23,7 +23,7 @@ Copy `dist/live-photos.min.js` into your project and include it in a `<script>` 
 
 ## Usage
 
-[Full documentation](https://tumblr.github.io/live-photos)
+[Full documentation](https://tumblr.github.io/laphs)
 
 The easiest way to use this library is by using special data-attributes on your Live Photo `<img>` tags.
 
