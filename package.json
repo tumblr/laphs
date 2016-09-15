@@ -44,7 +44,7 @@
     "chai": "^3.5.0",
     "css-loader": "^0.23.1",
     "eslint": "^3.0.1",
-    "hotdoc": "^0.7.0",
+    "hotdoc": "^0.7.2",
     "iphone-inline-video": "^1.7.4",
     "istanbul": "^0.4.3",
     "istanbul-instrumenter-loader": "^0.2.0",
