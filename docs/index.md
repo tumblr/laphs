@@ -8,7 +8,7 @@ Add support for Apple's Live Photos on the Web! Brought to you by <a href="https
 Click and hold down the following image to see it move.
 
 <figure class="demo">
-    <img src="https://40.media.tumblr.com/3613923b93c21e78bc9e8935220c186a/tumblr_o63c4ekE1X1twn7m0o1_1280.jpg" data-live-photo="https://53.media.tumblr.com/3613923b93c21e78bc9e8935220c186a/tumblr_o63c4ekE1X1twn7m0o1.mov" data-live-photo-still-image-time="1.71"/>
+    <img src="https://68.media.tumblr.com/d5adbcc54a9de542e9eb156d64423512/tumblr_odrntaUSj11tfv1z4o1_1280.jpg" data-live-photo="https://68.media.tumblr.com/d5adbcc54a9de542e9eb156d64423512/tumblr_odrntaUSj11tfv1z4o1.mp4" data-live-photo-still-image-time="1.71"/>
 </figure>
 <script src="./laphs.js"></script>
 <script src="./script.js"></script>
